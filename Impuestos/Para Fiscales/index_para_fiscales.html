@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Contable - Impuestos</title>
+        <link rel="stylesheet" href="../../estilos.css">
+    </head>
+    <body>
+
+        <a href="../../index.html">
+
+            <button type="button" class="boton_regresar">Ir al Inicio</button>
+        </a>
+
+        <br>
+        <h1>Impuestos Para-Físcales</h1>
+        <br><br>
+
+        <div id="contenedor_salarios">
+
+            <form action="#">
+
+                <label for="salario">
+
+                    Ingrese un salario <input type="text" name="caja_texto" id="salario" required>
+
+                </label>
+
+                <label for="mensualmente">
+
+                    Mensualmente es <input type="text" name="caja_texto" id="mensualmente" placeholder="0,00Bs.S" readonly> 
+                </label>
+                <br><br>
+                
+                <label for="seguro_so">
+
+                    Fondo de Ahorro de Viviendas(F.AH.V) <input type="checkbox" name="seguro" id="seguro_so">
+                
+                </label>
+                <br><br>
+
+                <label for="seguro_pie">
+
+                    Instituto Nacional de Capacitación Estudiantil Socialista(I.N.C.E.S) <input type="checkbox" name="seguro" id="seguro_pie">
+                
+                </label>
+
+                <button type="button" class="boton_salario" onclick="validar()">Validar</button>
+                <br><br>
+
+                <div id="contenedor_sso" style="display: none;">
+
+                    <label for="diariamente" style="display: none;">
+
+                        Diariamente es <input type="text" name="caja_texto" id="diariamente" placeholder="0,00Bs.S" readonly> 
+                    </label>
+    
+                    <label for="bono_vacacional" style="display: none;">
+    
+                        Alícuota del Bono Vacacional es <input type="text" name="caja_texto" id="bono_vacacional" placeholder="0,00Bs.S" readonly> 
+                    </label>
+    
+                    <label for="utilidades" style="display: none;">
+    
+                        Alícuota de Utilidades o fin de año es <input type="text" name="caja_texto" id="utilidades" placeholder="0,00Bs.S" readonly> 
+                    </label>
+                    
+                    <label for="salario_integral">
+    
+                        Salario Integral es <input type="text" name="caja_texto" id="salario_integral" placeholder="0,00Bs.S" readonly> 
+                    </label>
+                    <br><br>
+
+                    Total de cobrar del F.AH.V <input type="text" name="total_cobrar" id="cobrar_sso" placeholder="0,00Bs.S" readonly>
+
+                </div>
+
+                <div id="contenedor_pie" style="display: none;">
+
+                    Total de cobrar del I.N.C.E.S <input type="text" name="total_cobrar" id="cobrar_pie" placeholder="0,00Bs.S" readonly>
+
+                </div>
+                <br><br><br>
+                <button type="button" class="boton_salario" onclick="calcular()">Calcular</button>
+
+            </form>
+            
+        </div>
+
+        <script src="./programacion_para_fiscal.js"></script>
+    
+    </body>
+</html>

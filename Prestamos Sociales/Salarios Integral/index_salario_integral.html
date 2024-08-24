@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Contable - Prestamos Sociales</title>
+        <link rel="stylesheet" href="../../estilos.css">
+    </head>
+    <body>
+
+        <a href="../../index.html">
+
+            <button type="button" class="boton_regresar">Ir al Inicio</button>
+        </a>
+
+        <br>
+        <h1>Salario Integral</h1>
+        <br><br>
+        
+        <div id="contenedor_salarios">
+
+            <form action="#">
+
+                <label for="salario">
+
+                    Ingrese un salario <input type="text" name="caja_texto" id="salario" required>
+
+                </label>
+
+                <label for="mensualmente">
+
+                    Mensualmente es <input type="text" name="caja_texto" id="mensualmente" placeholder="0,00Bs.S" readonly> 
+                </label>
+                <br><br>
+
+                <label for="diariamente">
+
+                    Diariamente es <input type="text" name="caja_texto" id="diariamente" placeholder="0,00Bs.S" readonly> 
+                </label>
+
+                <label for="bono_vacacional">
+
+                    Alícuota del Bono Vacacional es <input type="text" name="caja_texto" id="bono_vacacional" placeholder="0,00Bs.S" readonly> 
+                </label>
+                <br><br>
+
+                <label for="utilidades">
+
+                    Alícuota de Utilidades o fin de año es <input type="text" name="caja_texto" id="utilidades" placeholder="0,00Bs.S" readonly> 
+                </label>
+
+                <label for="salario_integral">
+
+                    Salario Integral es <input type="text" name="caja_texto" id="salario_integral" placeholder="0,00Bs.S" readonly> 
+                </label>
+                <br><br>
+
+                <button type="button" class="boton_salario" onclick="calcular()">Calcular</button>
+
+            </form>
+
+        </div>
+
+        <script src="./programacion_salario_integral.js"></script>
+
+    </body>
+</html>

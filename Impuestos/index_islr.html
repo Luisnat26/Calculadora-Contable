@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Contable - Impuestos</title>
+        <link rel="stylesheet" href="../estilos.css">
+    </head>
+    <body>
+        
+        <a href="../index.html">
+
+            <button type="button" class="boton_regresar">Ir al Inicio</button>
+        </a>
+
+        <br>
+        <h1>Impuesto Sobre La Renta (I.S.L.R)</h1>
+        <br><br>
+
+        <div id="contendor_impuestos">
+
+            <form action="#">
+
+                <label for="ingreso_bruto">
+
+                    Ingrese un Salario Anual <input type="text" name="salario" id="ingreso_bruto">
+
+                </label>
+                <br><br>
+                <h3>Ingrese los siguientes gastos anuales:</h3>
+
+                <label for="educacion">
+
+                    Educación <input type="text" name="gastos" id="educacion">
+
+                </label>
+
+                <label for="salud">
+
+                    Salud <input type="text" name="gastos" id="salud">
+
+                </label>
+
+                <label for="deportes">
+
+                    Deportes <input type="text" name="gastos" id="deportes">
+
+                </label>
+                <br><br>
+
+                <label for="viviendas">
+
+                    Viviendas <input type="text" name="gastos" id="viviendas">
+
+                </label>
+                <br><br>
+
+                <label for="gastos_brutos">
+
+                    Total de gastos Anuales es <input type="text" name="gastos" id="gastos_brutos" placeholder="0,00Bs.S" readonly>
+
+                </label>
+
+                <label for="declaracion">
+
+                    Impuestos declarados es <input type="text" name="impuestos_declarados" id="declaracion" placeholder="0,00Bs.S" readonly>
+
+                </label>
+                <br><br>
+
+                <label for="impuestos_pagados">
+
+                    Impuestos a pagar es <input type="text" name="impuestos_pagar" id="impuestos_pagados" placeholder="0,00Bs.S" readonly>
+
+                </label>
+
+                <br><br>
+                <button type="button" class="boton_salario" onclick="calcular()">Calcular</button>
+
+            </form>
+
+        </div>
+
+        <script src="./programacion_islr.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,112 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;}
+
+body{
+    background: linear-gradient(100deg, #fff, #000);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;}
+
+h1{
+    font-size: 50px;
+    text-align: center;}
+
+#contendor_opciones, #enlaces, .salario{
+    margin: 50px;
+    font-size: 20px;}
+
+select, .boton_seleccion, .boton_salario, .boton_regresar, .boton_dia_opciones, .boton_dia{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;}
+
+label, #vacaciones, #salario_diario, #salario_dia_descanso, #salario_dia_feriado,
+#hora_normal, #horas_extras, #horas_nocturnas, #contenedor_sso, #contenedor_pie,
+h3, #modulo_uno, .informacion{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;}
+
+#salario_diario, #salario_dia_descanso, #salario_dia_feriado,
+#hora_normal, #horas_extras, #horas_nocturnas, #contenedor_sso, #contenedor_pie,
+.informacion{
+    float: left;}
+
+#enlaces{
+    position: relative;}
+
+#enlaces .menu{
+    margin: 10px;}
+
+#enlaces li{
+    float: left;
+    position: relative;
+    padding: 5px 0; 
+    margin: 5px;
+    list-style: none;}
+
+#enlaces li a{
+    background: #00f;
+    color: #fff;
+    text-decoration: none;}
+
+#enlaces li > ul{
+    display: none;
+    position: absolute;
+    background: #00f;
+    padding: 0;
+    z-index: 2;}
+
+#enlaces li > ul li{
+    padding: 0; 
+    margin: 1px 0;
+    list-style: none;}
+
+#enlaces li:hover > a{
+    color: #000;
+    background: #cd5c5c;}
+
+#enlaces li > ul li a{
+    display: block;
+    color: #fff;}
+
+#enlaces li:hover > ul{
+    display: block;
+    top: 35px;
+    left: 50px;
+    font-size: 15px;}
+
+
+#enlaces .separacion1, .separacion2, .separacion3, .separacion4{
+    margin: 0 0 0 10px;}
+
+p{
+    font-weight: normal;
+    text-transform: none;}
+
+article{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;}
+
+article ul li{
+    background: #fff;
+    color: #000;}
+
+article li{
+    text-transform: none;
+    font-weight: normal;}
+
+.separacion_tabla{
+    width: 250px;
+    background: #000;}
+
+.minusculas{
+    font-size: 20px;
+    text-transform: none;
+    font-weight: normal;}
+

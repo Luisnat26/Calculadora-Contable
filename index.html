@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Contable</title>
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>
+
+        <h1>Calculadora Contable</h1>
+        <br><br>
+        
+        <div id="contendor_opciones">
+            
+            <h2>Salarios</h2>
+
+            <form action="#">
+
+                <select name="seleccion" id="seleccion">
+
+                    <option value="">Seleccione una opción</option>
+                    <option value="1">Salarios</option>
+                    <option value="2">Vacaciones</option>
+                    <option value="3">Días</option>
+                    <option value="4">Horas</option>
+                    <option value="5">Ver Completo</option>
+
+                </select>
+                <br><br><br>
+                <h2>Préstamos Sociales y Retroactivos</h2>
+
+                <select name="seleccion" id="seleccion_dos">
+
+                    <option value="">Seleccione una opción</option>
+                    <option value="6">Salario Diario Normal</option>
+                    <option value="7">Alícuota de Bono Vacacional</option>
+                    <option value="8">Alícuota de Utilidades o Fin de Año</option>
+                    <option value="9">Salario Integral</option>
+                    <option value="10">Préstamos Sociales</option>
+                    <option value="11">Retroactivos</option>
+                    <option value="12">Ver completo</option>
+
+                </select>
+
+                <br><br><br>
+                <h2>Impuestos</h2>
+
+                <select name="seleccion" id="seleccion_tres">
+
+                    <option value="">Seleccione una opción</option>
+                    <option value="13">Físcales</option>
+                    <option value="14">Para-Físcales</option>
+                    <option value="15">Sobre la Renta</option>
+
+                </select>
+
+                <button type="button" class="boton_seleccion" onclick="validar()">Validar</button>
+
+
+            </form>
+            <br><br><br>
+
+        </div>
+
+        <div id="enlaces">
+
+            <ul class="menu">
+                <li><a href="#">Curso teórico de Contabilidad</a>
+
+                    <ul>
+                        <li><a href="./Enlaces/index_modulo_uno.html" class="separacion">Módulo 1</a></li>
+
+                        <li><a href="./Enlaces/index_modulo_dos.html" class="separacion2">Módulo 2</a></li>
+
+                        <li><a href="./Enlaces/index_modulo_tres.html" class="separacion3">Módulo 3</a></li>
+
+                    </ul>
+
+                </li>
+                
+
+                <li><a href="#">Sigueme:</a>
+                    
+                    <ul>
+                        <li style="width: 250px;"><a href="https://facebook.com/profile.php?=100086347459775">Facebook: Luis Nat</a></li>
+                        <br><br><br>
+
+                        <li><a href="https://wa.me/+5842127461192">WhatsApp: (+58)-412-746-11-92</a></li>
+                        <br><br><br>
+
+                        <li><a href="https://tiktok.com/@luisnat">Tik-tok: luisnat</a></li>
+                        <br><br><br>
+
+                        <li><a href="https://instagram.com/luisnat_26igsh=YzljYTk1ODg3Zg==">Instagram: luisnat_26</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="./Enlaces/index_informacion.html">Información de la Página</a></li>
+            </ul>
+
+        </div>
+        
+        <script src="./programacion.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Contable - Salario</title>
+        <link rel="stylesheet" href="../estilos.css">
+    </head>
+    <body>
+        
+        <a href="../index.html">
+
+            <button type="button" class="boton_regresar">Ir al Inicio</button>
+        </a>
+
+        <br>
+        <h1>Días</h1>
+        <br><br>
+
+        <div id="contenedor_dia_opciones">
+
+            <form action="#">
+
+                <label for="diario">
+
+                    Diario <input type="checkbox" name="dia" id="diario">
+
+                </label>
+
+                <label for="dia_descanso">
+
+                    Día de Descanso <input type="checkbox" name="dia" id="dia_descanso">
+
+                </label>
+
+                <label for="dia_feriado">
+
+                    Día Feriado <input type="checkbox" name="dia" id="dia_feriado">
+
+                </label>
+
+                <button type="button" class="boton_dia_opciones" onclick="validar()">Validar</button>
+
+            </form>
+            <br><br><br>
+            <div id="contendor_dia">
+
+                <form action="#">
+
+                    <label for="salario_normal">
+
+                        Ingrese un salario <input type="text" name="salario_normal" id="salario" required>
+
+                    </label>
+
+                    <div id="salario_diario" style="display: none;">
+
+                        Diariamente es <input type="text" name="dia" id="diario_trabajo" placeholder="0,00Bs" readonly>
+
+                    </div>
+                    <br><br><br>
+                    
+                    <div id="salario_dia_descanso" style="display: none;">
+
+                        Día de Descanso es <input type="text" name="dia" id="descanso_trabajo" placeholder="0,00Bs" readonly>
+
+                    </div>
+                    
+                    <div id="salario_dia_feriado" style="display: none;">
+
+                        Día Feriado es <input type="text" name="dia" id="feriado_trabajo" placeholder="0,00Bs" readonly>
+
+                    </div>
+                    <br><br><br>
+                    <label for="total_dia">
+
+                        Total a cobrar por días trabajados es <input type="text" name="total_dia" id="cobrar_dia" placeholder="0,00Bs" readonly>
+
+                    </label>
+
+                    <button type="button" class="boton_dia" onclick="calcular()">Calcular</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <script src="./programacion_dia.js"></script>
+
+    </body>
+</html>

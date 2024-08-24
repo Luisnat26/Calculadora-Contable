@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Contable - Salarios</title>
+        <link rel="stylesheet" href="../estilos.css">
+    </head>
+    <body>
+
+        <a href="../index.html">
+
+            <button type="button" class="boton_regresar">Ir al Inicio</button>
+        </a>
+
+        <br>
+        <h1>Salarios Completos</h1>
+        <br><br>
+
+        <div id="contenedor_salarios">
+
+            <form action="#">
+
+                <label for="salario">
+
+                    Ingrese un salario <input type="text" name="caja_texto" id="salario" required>
+
+                </label>
+
+                <label for="mensualmente">
+
+                    Mensualmente es <input type="text" name="caja_texto" id="mensualmente" placeholder="0,00Bs.S" readonly> 
+                
+                </label>
+                <br><br>
+
+                <div id="vacaciones" style="display: none;">
+
+                    Vacaciones es <input type="text" name="caja_texto" id="salario_vacaciones" placeholder="0,00Bs.S" readonly> 
+                
+                </div>
+                <br><br>
+
+                <div id="salario_diario" style="display: none;">
+
+                    Diariamente es <input type="text" name="dia" id="diario" placeholder="0,00Bs" readonly>
+
+                </div>
+                
+                <div id="salario_dia_descanso" style="display: none;">
+
+                    Día de Descanso es <input type="text" name="dia" id="salario_descanso" placeholder="0,00Bs" readonly>
+
+                </div>
+                
+                <div id="salario_dia_feriado" style="display: none;">
+
+                    Día Feriado es <input type="text" name="dia" id="salario_feriados" placeholder="0,00Bs" readonly>
+
+                </div>
+                <br><br><br>
+
+                <div id="hora_normal" style="display: none;">
+
+                    Hora Normal es <input type="text" name="hora" id="salario_hora_normal" placeholder="0,00Bs" readonly>
+
+                </div>
+                
+                <div id="horas_extras" style="display: none;">
+
+                    Horas Extras es <input type="text" name="hora" id="salario_horas_extras" placeholder="0,00Bs" readonly>
+
+                </div>
+                
+                <div id="horas_nocturnas" style="display: none;">
+
+                    Horas Nocturnas es <input type="text" name="hora" id="salario_horas_nocturnas" placeholder="0,00Bs" readonly>
+
+                </div>
+                <br><br><br><br>
+
+                <label for="cobrar_todo">
+
+                    Total de cobrar por todo es <input type="text" name="caja_texto" id="cobrar_todo" placeholder="0,00Bs.S" readonly> 
+                
+                </label>
+
+                <button type="button" class="boton_salario" onclick="calcular(vacaciones_opciones, dias, horas)">Calcular</button>
+
+            </form>
+
+        </div>
+
+        <script src="./programacion_ver_completo.js"></script>
+
+    </body>
+</html>

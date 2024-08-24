@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Contable - Prestamos Sociales</title>
+        <link rel="stylesheet" href="../../estilos.css">
+    </head>
+    <body>
+
+        <a href="../../index.html">
+
+            <button type="button" class="boton_regresar">Ir al Inicio</button>
+        </a>
+
+        <br>
+        <h1>Salarios Diarios</h1>
+        <br><br>
+        
+        <div id="contenedor_salarios">
+
+            <form action="#">
+
+                <label for="salario">
+
+                    Ingrese un salario <input type="text" name="caja_texto" id="salario" required>
+
+                </label>
+
+                <label for="mensualmente">
+
+                    Mensualmente es <input type="text" name="caja_texto" id="mensualmente" placeholder="0,00Bs.S" readonly> 
+                </label>
+                <br><br>
+                <label for="diarimente">
+
+                    Diariamente es <input type="text" name="caja_texto" id="diariamente" placeholder="0,00Bs.S" readonly> 
+                </label>
+
+
+                <button type="button" class="boton_salario" onclick="calcular()">Calcular</button>
+
+            </form>
+
+        </div>
+
+        <script src="./programacion_salario_diarios.js"></script>
+
+    </body>
+</html>
